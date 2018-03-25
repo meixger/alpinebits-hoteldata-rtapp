@@ -1,0 +1,10 @@
+{
+  "name": "rtapp-201710",
+  "version": "1.0.0-rc.1",
+  "description": "AlpineBits rate plan test application",
+  "license": "SEE LICENSE IN license.txt",
+  "dependencies": {
+    "deasync": "0.1.x",
+    "xml2js": "0.4.x"
+  }
+}

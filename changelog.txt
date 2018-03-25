@@ -1,0 +1,5 @@
+
+rtapp-201710 v. 1.0.0-rc.1 (released 2018-03-26)
+
+    - forked from rtapp-201507 v. 1.3.0 and adapted to AlpineBits 2017-10
+
