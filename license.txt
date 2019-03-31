@@ -1,6 +1,6 @@
 AlpineBits rate plan test application (rtapp)
 
-(C) 2018 AlpineBits Alliance
+(C) 2018-2019 AlpineBits Alliance
 based on previous work (C) 2014-2015 TIS innovation park
 
 

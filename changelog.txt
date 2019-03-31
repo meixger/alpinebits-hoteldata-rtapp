@@ -1,3 +1,16 @@
+rtapp-201710 v. 1.0.0 (released 2019-03-31)
+
+    - bug fix: rtapp erroneously rejected MinOccupancy = 0 in Offers (ref.
+      standard document PDF p. 58)
+
+    - bug fix: rtapp did not handle the values SetForwardMinStay and
+      SetForwardMaxStay for attribute MinMaxMessageType (ref. standard document
+      PDF p. 50)
+
+    - added feature: rtapp now honours the Min/MaxAdvancedBookingOffset attributes;
+      the booking date can be given to cli.js with the new, optional -b argument
+      (the default value is the current date)
+
 
 rtapp-201710 v. 1.0.0-rc.1 (released 2018-03-26)
 

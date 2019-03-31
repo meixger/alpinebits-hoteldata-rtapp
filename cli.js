@@ -2,7 +2,7 @@
 
  AlpineBits rate plan test application (rtapp-201710)
 
- (C) 2018 AlpineBits Alliance
+ (C) 2018-2019 AlpineBits Alliance
  based on previous work (C) 2014-2015 TIS innovation park
 
 
@@ -25,6 +25,8 @@
 
  [  -c <child one age> [ <child two age> [...] ] ]
 
+ [ -b <booking_date> ]
+
  [ -v  | -vv ]
 
 
@@ -36,6 +38,9 @@
 
  -v   also prints out the debug output that details how the total cost was calculated
  -vv  is like -v, with even more debug output that dumps the rateplans
+
+ -b <booking_date> is optional and used to test Min/MaxAdvancedBookingOffset, if the date is not
+ given the current date is assumed
 
 
  author:
@@ -52,7 +57,7 @@ var fs = require('fs');
 var engine = require('./lib/engine');
 
 
-var rpmsg_name, rpmsg_data, arrival, departure, num_adults, children_ages = [], occupancy = [];
+var rpmsg_name, rpmsg_data, arrival, departure, num_adults, children_ages = [], occupancy = [], booking_date;
 
 var show_info1 = false;
 var show_info2 = false;
@@ -71,6 +76,7 @@ if (process.argv.length <= 2) {
     console.log('                   -d <ISO departure date> ');
     console.log('                   -n <number of adults>');
     console.log('                 [ -c <child one age> [ <child two age> [...] ] ]');
+    console.log('                 [ -b <booking_date> ]');
     console.log('                 [ -v  | -vv ]');
     process.exit(0);
 }
@@ -93,6 +99,7 @@ for (i = 2; i < process.argv.length; i++) {
             case '-d':
             case '-n':
             case '-c':
+            case '-b':
                 state = str;
                 break;
             default:
@@ -127,6 +134,9 @@ for (i = 2; i < process.argv.length; i++) {
                 break;
             case '-c':
                 children_ages.push(str);
+                break;
+            case '-b':
+                booking_date = str;
                 break;
             default:
                 err_exit('could not parse argument list near token: ' + str);
@@ -170,7 +180,8 @@ try {
         departure: departure,
         num_adults: num_adults,
         children_ages: children_ages,
-        occupancy: occupancy
+        occupancy: occupancy,
+        booking_date: booking_date
     });
 
     console.log();
