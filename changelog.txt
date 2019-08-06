@@ -1,3 +1,11 @@
+rtapp-201710 v. 1.1.0 (released 2019-06-05)
+
+    - added feature: besides AlpineBits 2017-10, rtapp-201710 can now also
+      handle AlpineBits 2018-10; there is a new option:
+
+      -p <protocol_version> is optional and can be either 2017-10 (the default) or 2018-10
+
+
 rtapp-201710 v. 1.0.0 (released 2019-03-31)
 
     - bug fix: rtapp erroneously rejected MinOccupancy = 0 in Offers (ref.

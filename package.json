@@ -1,6 +1,6 @@
 {
   "name": "rtapp-201710",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "AlpineBits rate plan test application",
   "license": "SEE LICENSE IN license.txt",
   "dependencies": {
