@@ -1,3 +1,18 @@
+
+rtapp v. 2.0.0 (release 2020-11-22)
+
+    - renamed from "rtapp-201710" to just "rtapp" to reflect the fact that this codebase
+      supports all the latest versions of the standard since 2017-10 and not just
+      2017-10 specifically
+
+    - bug fix: rtapp 1.1.0 exited with "ReferenceError: protocol_version is not defined"
+      when maximum child occupancy was given; the bug was reported and patched by Luca R.
+     ( https://gitlab.com/alpinebits/hoteldata/rtapp/-/merge_requests/2 )
+
+    - added feature: rtapp now also supports 2020-10: the -p option recognizes
+      "2020-10"; in this version currencies codes can be different from "EUR"
+
+
 rtapp-201710 v. 1.1.0 (released 2019-06-05)
 
     - added feature: besides AlpineBits 2017-10, rtapp-201710 can now also

@@ -2,7 +2,7 @@
 
  AlpineBits rate plan test application (rtapp-201710)
 
- (C) 2018-2019 AlpineBits Alliance
+ (C) 2018-2020 AlpineBits Alliance
  based on previous work (C) 2014-2015 TIS innovation park
 
 
@@ -44,7 +44,7 @@
  -b <booking_date> is optional and used to test Min/MaxAdvancedBookingOffset, if the date is not
  given the current date is assumed
 
- -p <protocol_version> is optional and can be either 2017-10 (the default) or 2018-10
+ -p <protocol_version> is optional and can be either 2017-10 (the default), 2018-10 or 2020-10
 
 
  author:
