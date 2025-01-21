@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--traceid:db8a933584f21bce5b9b6ec4d37e422c-->
+<OTA_HotelRatePlanNotifRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="1.000" TimeStamp="2025-01-16T14:59:32" xmlns="http://www.opentravel.org/OTA/2003/05">
+  <RatePlans HotelCode="13973" HotelName="Internet Consulting Gmbh">
+    <RatePlan RatePlanNotifType="New" CurrencyCode="EUR" RatePlanCode="R46401-UF" RatePlanID="R46401" RatePlanQualifier="true">
+      <BookingRules>
+        <BookingRule CodeContext="ROOMTYPE" Code="B" Start="2025-01-16" End="2025-12-31">
+          <LengthsOfStay>
+            <LengthOfStay Time="1" TimeUnit="Day" MinMaxMessageType="SetMinLOS" />
+          </LengthsOfStay>
+          <DOW_Restrictions>
+            <ArrivalDaysOfWeek Mon="true" Tue="true" Weds="true" Thur="true" Fri="true" Sat="true" Sun="true" />
+            <DepartureDaysOfWeek Mon="true" Tue="true" Weds="true" Thur="true" Fri="true" Sat="true" Sun="true" />
+          </DOW_Restrictions>
+          <RestrictionStatus Restriction="Master" Status="Open" />
+        </BookingRule>
+        <BookingRule CodeContext="ROOMTYPE" Code="B" Start="2026-01-01" End="2026-02-20">
+          <RestrictionStatus Restriction="Master" Status="Close" />
+        </BookingRule>
+      </BookingRules>
+      <Rates>
+        <Rate RateTimeUnit="Day" UnitMultiplier="1">
+          <BaseByGuestAmts>
+            <BaseByGuestAmt Type="7" />
+          </BaseByGuestAmts>
+          <MealsIncluded MealPlanCodes="3" MealPlanIndicator="true" />
+        </Rate>
+        <Rate Start="2025-01-16" End="2025-12-31" InvTypeCode="B">
+          <BaseByGuestAmts>
+            <BaseByGuestAmt NumberOfGuests="1" AmountAfterTax="50.00" AgeQualifyingCode="10" />
+            <BaseByGuestAmt NumberOfGuests="2" AmountAfterTax="50.00" AgeQualifyingCode="10" />
+          </BaseByGuestAmts>
+          <AdditionalGuestAmounts>
+            <AdditionalGuestAmount Amount="50.00" AgeQualifyingCode="10" />
+            <AdditionalGuestAmount Amount="50.00" AgeQualifyingCode="8" MaxAge="10" />
+          </AdditionalGuestAmounts>
+        </Rate>
+      </Rates>
+      <Offers>
+        <Offer>
+          <OfferRules>
+            <OfferRule>
+              <Occupancy AgeQualifyingCode="10" MinAge="10" />
+              <Occupancy AgeQualifyingCode="8" />
+            </OfferRule>
+          </OfferRules>
+        </Offer>
+      </Offers>
+      <Description Name="title">
+        <Text TextFormat="PlainText" Language="de">Normaltarif</Text>
+        <Text TextFormat="PlainText" Language="en">Standard rate</Text>
+        <Text TextFormat="PlainText" Language="fl">Normaltarif</Text>
+        <Text TextFormat="PlainText" Language="fr">Standard rate</Text>
+        <Text TextFormat="PlainText" Language="it">Tariffa standard</Text>
+      </Description>
+    </RatePlan>
+  </RatePlans>
+</OTA_HotelRatePlanNotifRQ>
